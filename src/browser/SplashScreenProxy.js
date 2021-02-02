@@ -49,14 +49,16 @@ var SplashScreen = {
       });
     },
     hide: function () {
-      if (splashWin !== null) {
-        splashWin.close(true);
-        gui.Window.get().show();
-        setTimeout(function() {
-            gui.Window.get().restore();
-        }, 100);
-        splashWin = null;
-      }
+        if (splashWin !== null) {
+            gui.Window.get().show();
+            gui.Window.get().blur();
+            setTimeout(function() {
+                splashWin.close(true);
+                splashWin = null;
+                gui.Window.get().restore();
+                gui.Window.get().focus();
+            }, 1500);
+        }
     }
 };
 
