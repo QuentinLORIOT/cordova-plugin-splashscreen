@@ -21,7 +21,7 @@ var SplashScreen = {
                 alwaysOnTop: true
             }
         );
-        splashWin.loadURL(`file://${__dirname}/splash.html`);
+        splashWin.loadURL(`file://${__dirname}/assets/splash.html`);
     },
     hide: function () {
         if (splashWin !== null) {
