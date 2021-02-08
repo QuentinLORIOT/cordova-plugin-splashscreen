@@ -14,7 +14,8 @@
       "wp8",
       "windows8",
       "windows",
-      "tizen"
+      "tizen",
+      "electron"
     ]
   },
   "repository": {

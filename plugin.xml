@@ -132,4 +132,11 @@
             <runs />
         </js-module>
     </platform>
+
+    <!-- electron -->
+    <platform name="electron">
+        <js-module src="src/electron/SplashScreenProxy.js" name="SplashScreenProxy">
+            <runs />
+        </js-module>
+    </platform>
 </plugin>
