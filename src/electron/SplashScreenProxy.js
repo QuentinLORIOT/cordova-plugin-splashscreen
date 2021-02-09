@@ -7,7 +7,7 @@ var splashWin = null;
 var cordova = require('cordova');
 var configHelper = cordova.require('cordova/confighelper');
 var electron = window.require('electron');
-var path = require('path');
+var path = window.require('path');
 
 var SplashScreen = {
     setBGColor: function (cssBGColor) {
@@ -22,7 +22,7 @@ var SplashScreen = {
                 alwaysOnTop: true
             }
         );
-        splashWin.loadURL(path.resolve(`${__dirname}/assets/splash.html`));
+        splashWin.loadURL(`file://${__dirname}/assets/splash/splash.html`);
     },
     hide: function () {
         if (splashWin !== null) {
